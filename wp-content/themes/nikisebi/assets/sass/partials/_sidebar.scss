@@ -1,0 +1,22 @@
+#secondary {
+	font-family: $sans-font;
+	ul {
+		list-style: none;
+		padding-left: 0;
+		li {
+			line-height: 1em;
+    		margin-bottom: 1em; 
+			a {
+				-webkit-box-shadow: none;
+		        -moz-box-shadow: none;
+		        box-shadow: none;
+		        color: $gray;		
+		    }
+		}	
+	}
+
+	h2.widget-title {
+		font-size: 1.5em;
+		font-family: $sans-font;
+	}
+}

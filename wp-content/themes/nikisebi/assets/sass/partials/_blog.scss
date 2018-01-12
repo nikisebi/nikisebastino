@@ -1,0 +1,60 @@
+.blog-posts {
+	@include media(">=tablet") {
+		section h4 {
+			min-height: 100px;			
+		}
+		section p:first-of-type {
+			min-height: 140px;
+		}
+	}
+	h4 a {
+		color: $black;
+	    -webkit-box-shadow: inset 0 -4px 0 rgba(237,119,0,0.5);
+	    -moz-box-shadow: inset 0 -4px 0 rgba(237,119,0,0.5);
+	    box-shadow: inset 0 -4px 0 rgba(237,119,0,0.5);
+	    text-decoration: none;
+	}
+	.readmore {
+		background-color: $orange;
+		color: #fff;
+		opacity: .5;
+		padding: 7px 25px;
+		&:hover {
+			color: #fff !important;
+			opacity: 1;
+		}
+	}
+}
+
+.single {
+	h2, h3, h4, h5, h6 {
+		font-family: $sans-font;
+		margin: 1.5rem 0;
+	}
+	h2 {
+		font-size: 2em;
+	}
+	h2.widget-title {
+		color: $orange;
+	}
+	.blog-content {
+		a {
+			color: $black;
+			font-family: $sans-font;
+			&:hover {
+		    -webkit-box-shadow: inset 0 -4px 0 $light-orange;
+		    -moz-box-shadow: inset 0 -4px 0 $light-orange;
+		    box-shadow: inset 0 -4px 0 $light-orange;
+			}
+		}
+		/* em, strong {
+			font-family: $sans-font;
+			font-style: normal;
+		} */
+	}
+	#secondary {
+		ul li a:hover {
+			color: $orange !important;
+		}
+	}
+}

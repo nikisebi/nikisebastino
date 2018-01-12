@@ -1,0 +1,178 @@
+// Typographic Overrides
+///////////////////////////////////////////////////////////////////////////////
+$max-width: 1500px;
+/* $header-ratio: $major-seventh; */
+$max-font: 19px;
+$min-font: 16px;
+$line-height-ratio: 1.5;
+$header-font: 'Source Serif Pro', serif;
+$body-font: 'Source Serif Pro', serif;
+$serif-font: 'Source Serif Pro', serif;
+$sans-font: 'Proxima Nova', sans-serif;
+$alt-font: 'Source Serif Pro', serif;
+
+@include typographic();
+
+a {
+    /* -webkit-box-shadow: inset 0 -4px 0 $orange;
+    -moz-box-shadow: inset 0 -4px 0 $orange;
+    box-shadow: inset 0 -4px 0 $orange; */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    &:hover {
+        color: $black !important;
+        text-decoration: none !important;
+    }
+}
+
+h1,h2 {
+    font-family: $header-font;
+    font-weight: 300;
+    line-height:1.1;
+    color: $black;
+    font-size: 3.25em;
+    margin: 0 0 14px;
+    @include media("<tablet") {
+        font-size: 2em;
+    }
+}
+
+h3,h4,h5 {
+    line-height:1.25;
+    @include media("<tablet") {
+        font-size: 1em;
+    }
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $black;
+    margin:1rem 0;
+    /* font-weight: normal; */
+}
+
+/* @include media("<=tablet") {
+    h1,h2,h3,h4,h5,h6 {
+        font-size: 2em !important;
+    }
+} */
+
+.h6-smaller {
+    font-size: 80%;
+}
+
+body {
+    /* font-family:$body-font; */
+    -webkit-font-smoothing:antialiased;
+    color:$dark-gray;
+    font-family:$body-font;
+    font-size: 1em;
+    font-weight:normal;
+    overflow-x:hidden;
+
+}
+
+.subhead {
+    font-family: $body-font;
+    font-size: 2em;
+    @include media("<tablet") {
+        font-size: 1em;
+    }
+}
+
+.label {
+    font-family:$alt-font;
+    text-transform:uppercase;
+}
+
+.icon-pin {
+    position:relative;
+    top:2px;
+    + .icon-pin {
+        margin-left:10px;
+    }
+
+}
+
+.text-double {
+    font-size:2rem;
+}
+
+.text-triple {
+    font-size:3rem;
+}
+
+.text-large {
+    font-size:1.2rem;
+    line-height:1.5;
+}
+
+.text-medium {
+    font-size:1.1rem;
+    line-height:1.4;
+}
+
+.text-shadow-bg {
+    text-shadow:0 0 20px #000;
+}
+
+.sans-serif {
+    font-family:$sans-font;
+}
+
+.serif {
+    font-family:$body-font;
+}
+
+.alt-font {
+    font-family:$alt-font;
+    text-transform:uppercase;
+    font-weight:500;
+}
+
+.em {
+    font-style:italic;
+}
+
+.header {
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+.text-light-blue {color:$light-blue!important;}
+.text-dark-blue {color:$dark-blue!important;}
+.text-white {color:#fff!important;}
+.text-gray {color:$light-gray!important;}
+.text-light-orange {color:$light-orange!important;}
+
+.lh1 {
+    line-height:1;
+}
+
+.lh1andhalf {
+    line-height:1.5;
+}
+
+.pwicon {
+    position:relative;
+    padding-left:25px;
+    i {
+        position:absolute;
+        top:2px;
+        left:0;
+    }
+}
+
+.upper {
+    text-transform:uppercase;
+}
+
+.lower {
+    text-transform:none!important;
+}
+
+.border-top {
+    border-top:2px solid $light-gray;
+}

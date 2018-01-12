@@ -1,0 +1,12 @@
+.selectize-control.single .selectize-input:after {
+    border: 0!important;
+    width:25px;
+}
+
+.wp-color-result {
+    height:24px;
+}
+
+.hint:after, [data-hint]:after {
+    left: -175px;
+}

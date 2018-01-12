@@ -1,0 +1,21 @@
+/* make hambureger menu background solid white */
+button.hamburger.is-closed	{
+	background-color: #fff;
+}
+
+.bad-stuff	{
+	/*background: url(http://via.placeholder.com/1000/000000?text=placeholder) no-repeat center center fixed;*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+/*fix ribbon on IOS */
+.really-cheap-hosting-flag	{
+	width:50px;
+}
+
+img.bookcover	{
+	float:right;
+}

@@ -1,0 +1,108 @@
+.gfield_required {
+	display: none;
+}
+
+.gform_wrapper .top_label .gfield_label {
+    display: none !important;
+}
+
+.gform_wrapper .field_sublabel_below .ginput_complex.ginput_container label, .gform_wrapper .field_sublabel_below div[class*=gfield_time_].ginput_container label {
+    display: none !important;
+}
+
+/* form placeholder overrides - have to use !important or this doesn't work
+--------------------------------------------- */
+::-webkit-input-placeholder { /* Chrome */
+  color: $dark-gray !important;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $dark-gray !important;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $dark-gray !important;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: $dark-gray !important;
+}
+
+.gform_wrapper .top_label input.medium, .gform_wrapper .top_label select.medium {
+    width: 100% !important;
+}
+
+.gform_wrapper input:not([type="radio"]):not([type="checkbox"]):not([type="submit"]):not([type="button"]):not([type="image"]):not([type="file"]) {
+    font-size: 24px !important;
+	@media (max-width: 991px) {    
+		font-size: 20px !important;
+	}
+    height: 50px;
+    color: #000;
+    padding: 5px 26px !important;
+    border: 2px solid #e7e7e8;
+    box-shadow: none !important;
+}
+
+.gform_wrapper textarea.medium {
+	@media (max-width: 991px) {    
+		font-size: 20px !important;
+	}
+    font-size: 24px !important;
+    height: 50px;
+    font-size: 30px;
+    color: #000;
+    padding: 5px 26px;
+    border: 2px solid #e7e7e8;
+
+}
+
+body .gform_wrapper ul li.gfield {
+    margin-top: 0 !important;
+}
+
+#field_2_4 {
+	margin-bottom: 2em;
+}
+
+.gform_wrapper .gsection .gfield_label, .gform_wrapper h2.gsection_title, .gform_wrapper h3.gform_title {
+    font-weight: 300 !important;
+    font-size: 1.5em !important;
+}
+
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+    line-height: 1.5;
+    font-weight: normal;
+    color: $black;
+    margin-top: 7px !important;
+    margin-left: 7px !important;
+}
+
+/* 
+  PERFORMANCE FORM 
+ */
+
+#field_3_1, #field_3_1 {
+  padding-right: 0;
+}
+
+
+#gform_3 {
+
+    ul.gform_fields li.gfield {
+        padding-right: 0 !important;
+    }
+    .gform_footer {
+        padding: 0 !important;
+    }
+    .btn {
+        border-bottom: 2px solid $orange;
+        border-left: 2px solid $orange;
+        border-right: 2px solid $orange;
+        border-top: 2px solid $orange;
+        height: 50px;
+    }
+
+}
+
+
+
+
+

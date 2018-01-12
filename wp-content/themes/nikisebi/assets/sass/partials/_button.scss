@@ -1,0 +1,287 @@
+button {
+    line-height: 2em;
+}
+
+.btn {
+    font-size: 18px !important;
+}
+
+a {
+    text-decoration:none;
+    &:hover {
+    }
+}
+
+%button {
+    font-family: $serif-font;
+    font-style: italic;
+    font-size:.7rem;
+    padding:.5rem 1.25rem .5rem;
+    line-height:1.15;
+    font-weight:400;
+    color:#fff;
+    background:$yellow;
+    display:inline-block;
+    transition:all .3s ease;
+    border-radius:100px;
+
+    &.long {
+        min-width:120px;
+    }
+
+    &:hover {
+        background:darken($yellow, 8);
+        color:#fff;
+    }
+
+    &.button-green {
+        background:$green;
+        border-color:$green;
+        &:hover {
+            background:darken($green, 8);
+        }
+    }
+
+    &.button-blue {
+        background:$light-blue;
+        border-color:$light-blue;
+        &:hover {
+            background:darken($light-blue, 8);
+        }
+    }
+
+    &.button-dark-blue {
+        background:$dark-blue;
+        border-color:$dark-blue;
+        &:hover {
+            background:darken($dark-blue, 8);
+        }
+    }
+
+    &.button-yellow-outline {
+        background:transparent;
+        border:2px solid $yellow;
+        color:$yellow;
+        &:hover {
+            background:$yellow;
+            color:#fff;
+        }
+    }
+
+    &.button-green-outline {
+        background:transparent;
+        border:2px solid $green;
+        &:hover {
+            background:$green;
+        }
+    }
+
+    &.button-blue-outline {
+        background:transparent;
+        border:2px solid $light-blue;
+        &:hover {
+            background:$light-blue;
+        }
+    }
+
+    &.inline {
+        font-size: 80%;
+        line-height: 0.8;
+        display: inline-block;
+        margin: 0;
+        cursor:pointer;
+    }
+}
+
+.button {
+    @extend %button;
+    margin-left:6px;
+    margin-right:6px;
+    @include media("<tablet") {
+        margin-bottom: 6px;
+    }
+
+}
+
+button, input[type="submit"], a {
+    border:0;
+    &:focus {
+        outline:none;
+    }
+}
+
+.read-more {
+    font-style:italic;
+    color:$dark-gray;
+}
+
+.stack {
+    display:block;
+    width:180px;
+    max-width:100%;
+    margin:1rem auto;
+    box-sizing:border-box;
+}
+
+.button-banner {
+    display:block;
+    color:#fff;
+    background:$yellow;
+    border-top:4px solid #000;
+    border-bottom:4px solid #000;
+    text-transform:uppercase;
+    font-size:1.7rem;
+    font-style:italic;
+    text-align:center;
+    span {
+        display:block;
+        border-top:6px solid #fff;
+        border-bottom:6px solid #fff;
+        padding:1rem;
+        line-height:1;
+    }
+
+    &:hover {
+        color:#fff;
+        /* background:$red; */
+    }
+}
+
+.bg-red {
+    .button-red {
+        background:#860429;
+        &:hover {
+            background:darken(#860429,10);
+        }
+    }
+}
+
+.bg-yellow {
+    .button-yellow {
+        background:darken($yellow,10);
+        &:hover {
+            background:darken($yellow,14);
+        }
+    }
+}
+
+.load-more-container {
+    a {
+        color:$gray;
+        font-family:$alt-font;
+        text-transform:uppercase;
+        text-indent:0px;
+        transition:none;
+        font-size:1rem;
+    }
+
+    .spinner {
+        margin: 5px auto;
+        width: 60px;
+        position:relative;
+        text-align: center;
+    }
+
+    .spinner > div {
+        width: 10px;
+        height: 10px;
+        margin:0 2px;
+        background-color: lighten($gray,10);
+
+        border-radius: 100%;
+        display: inline-block;
+    }
+
+    .spinner .bounce1 {
+        animation-delay: -0.32s!important;
+    }
+
+    .spinner .bounce2 {
+        animation-delay: -0.16s!important;
+    }
+
+    &.loading {
+        .spinner > div {
+            animation-play-state: running;
+            animation: bouncedelay 1.4s infinite ease-in-out;
+//            animation-play-state:paused;
+            animation-fill-mode: forwards;
+        }
+    }
+
+
+}
+
+@keyframes bouncedelay {
+    0%, 80%, 100% { transform: scale(0.4); opacity:.4; }
+    40% { transform: scale(1.0); opacity:1; }
+}
+
+body .tag {
+    font-style:italic;
+    background:$light-blue;
+    color:$dark-blue;
+    font-size:.7rem;
+    border-radius:5px;
+    padding: 8px 20px 7px 20px;
+    margin:4px 4px 0 0;
+    display:inline-block;
+    line-height: 1;
+    position:relative;
+    top:-1px;
+    transition:all .3s;
+
+    i {
+        position:absolute;
+        top:54%;
+        left:5px;
+        color:#fff;
+        transform:scale(0) rotate(-360deg) translateY(-50%);
+        opacity:0;
+        transform-origin:top center;
+        transition:all .3s;
+    }
+
+    &.active {
+        padding: 8px 20px 7px 30px;
+        background:#fff;
+        color:$dark-blue;
+        i {
+            transform:scale(1) rotate(0deg) translateY(-50%);
+            opacity:1;
+            color:$yellow;
+        }
+    }
+}
+
+.active-tag {
+    transition:none!important;
+}
+
+.btn {
+    font-weight: 400;
+    border: 1px solid transparent;
+    padding: 10px 25px;
+    font-size: 14px;
+    border-radius: 0;
+    transition: border-color 0.5s ease;
+    -webkit-transition: border-color 0.5s ease;
+    -moz-transition: border-color 0.5s ease;
+    -o-transition: border-color 0.5s ease;
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+
+.btn-blue {
+    color: $dark-gray;
+    background-color: #fff;
+    border-color: $orange;
+}
+
+.btn-blue:hover {
+    color: #fff;
+    background-color: $orange;
+    border-color: $orange;
+}

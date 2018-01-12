@@ -1,0 +1,36 @@
+// Colors
+///////////////////////////////////////////////////////////////////////////////
+
+$dark-blue : #0c87b9;
+$light-blue : #4cabd2;
+$blue : rgba(32,158,210,.5);
+$midnight-blue : #001e62;
+$orange : #fcb040;
+$sand : #f5e1a4;
+$light-gray : rgba(0,0,0,.05);
+$light-gray-solid : #f1f1f1;
+$slate-gray : #8e9fb6;
+$dark-gray : #868686;
+$black : #040707;
+$green : #3faa86;
+$dark-green : #007577;
+$yellow : #ffc15c;
+
+/* silverbee */
+$gray-blue : #e1e9f2;
+$orange : #ed7700;
+$light-orange : rgba(252,176,64,.6);
+$black : #221e1f;
+$light-blue : #81a8c8;
+$dark-blue : #255f95;
+
+$rev-link-color : #fff;
+$link-color : $orange; 
+
+%fill-parent {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}

@@ -1,0 +1,13 @@
+footer {
+	font-family: $sans-font;
+	margin-top: 1em; 
+	p {
+		font-size: .7em;
+	}
+	a {
+		color: $link-color;
+		&:hover {
+			color: $light-blue; 
+		}
+	}
+}

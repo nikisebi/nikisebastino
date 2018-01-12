@@ -1,0 +1,10 @@
+.modal-content {
+	border-radius: 0;
+	padding: 2em;
+}
+.modal-header, .modal-body {
+    border-bottom: 0;
+}
+.modal-title {
+	color: $light-blue;
+}

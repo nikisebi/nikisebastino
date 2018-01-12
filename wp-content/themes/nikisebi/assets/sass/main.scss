@@ -1,0 +1,30 @@
+@import 'variables';
+@import 'mixins';
+
+@import './bower_components/normalize.css/normalize';
+@import './bower_components/include-media/dist/include-media';
+@import './bower_components/typographic/scss/typographic';
+
+//Breakpoints
+$breakpoints: (phone: 320px, tablet: 768px, desktop: 1024px);
+
+@import 'vendors/bootstrap-stylesheets/bootstrap';
+@import 'vendors/aos';
+ 
+@import 'partials/wp';
+//@import 'partials/base';
+@import 'partials/typography';
+@import 'partials/button';
+@import 'partials/nav';
+@import 'partials/layout';
+@import 'partials/footer';
+@import 'partials/home';
+@import 'partials/interior';
+@import 'partials/forms';
+@import 'partials/modals';
+@import 'partials/sidebar';
+@import 'partials/blog';
+@import 'partials/about';
+@import 'partials/slick';
+@import 'partials/faq';
+@import 'partials/nonprofit';

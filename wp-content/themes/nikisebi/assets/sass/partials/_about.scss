@@ -1,0 +1,27 @@
+/* .bad-stuff, .cover	{
+	background: url(/wp-content/themes/fatlab/assets/images/shane-larrabee.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} */
+
+
+.testimonials {
+	h6 {
+		margin: 0 0 57px;
+		position: relative;
+	}
+	h6:before {
+	    content: "";
+	    position: absolute;
+	    bottom: -14px;
+	    left: 50%;
+	    -webkit-transform: translateX(-50%);
+	    -ms-transform: translateX(-50%);
+	    transform: translateX(-50%);
+	    width: 32px;
+	    height: 3px;
+	    background: $orange;
+	}
+}
